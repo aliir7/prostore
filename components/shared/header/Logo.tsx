@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { APP_NAME } from "@/lib/constants";
+import logoImg from "../../../public/images/logo.svg";
 
 function Logo() {
   return (
     <Link href="/" className="flex-start">
       <Image
-        src="/public/images/logo.svg"
+        src={logoImg}
         alt={`${APP_NAME}`}
         priority={true}
         width={48}
