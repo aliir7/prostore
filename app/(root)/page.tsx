@@ -1,3 +1,10 @@
+import ProductList from "@/components/shared/product/ProductList";
+import sampleData from "@/db/sample-data";
+
 export default function Home() {
-  return <>hi</>;
+  return (
+    <>
+      <ProductList data={sampleData.products} title="new Arriving" />
+    </>
+  );
 }
