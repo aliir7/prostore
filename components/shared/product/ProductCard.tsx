@@ -1,10 +1,11 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
 import ProductPrice from "./ProductPrice";
+import { Product } from "@/types";
 
 interface ProductCardProps {
-  product: any;
+  product: Product;
 }
 
 function ProductCard({ product }: ProductCardProps) {
