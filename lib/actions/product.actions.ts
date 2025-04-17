@@ -1,7 +1,7 @@
 "use server";
 
 import { LATEST_PRODUCTS_LIMIT } from "../constants";
-import { PrismaClient } from "../generated/prisma";
+import { PrismaClient } from "@prisma/client";
 import { convertToPlainObject } from "../utils";
 
 // Create a single PrismaClient instance to reuse across the application
